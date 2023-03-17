@@ -6,7 +6,7 @@ import useHttp from '../../hooks/use-http';
 const Search = (props) => {
   const {error,sendRequest,isLoading} = useHttp()
   const [city, setCity] = useState("");
-  const url = `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=${process.env.REACT_APP_OPEN_WEATHER_API_KEY}`;
+  const url = `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=${process.env.REACT_APP_OPEN_WEATHER_API_KEY}`;
 
   const submitHandler = (event) => {
     event.preventDefault();
