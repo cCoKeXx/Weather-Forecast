@@ -1,0 +1,23 @@
+.container{
+    flex-basis: 200px;
+    
+    height: 5rem;
+    display: flex;
+    align-items: flex-start;
+    white-space: nowrap;
+}
+.container h4,h2{
+    margin:0;
+    padding:0
+}
+.container h2{
+    color: var(--black)
+}
+@media only screen and (max-width:460px){
+    .container h4{
+        font-size: 0.7rem;
+    }
+    .container h2{
+        font-size: 1.3rem;
+    }
+}

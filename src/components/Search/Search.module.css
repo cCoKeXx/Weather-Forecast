@@ -1,0 +1,30 @@
+.form {
+  width: 60%;
+  margin-bottom: 1.rem;
+  box-sizing: content-box;
+ 
+
+}
+.form input {
+  width: 100%;
+  padding: 0.5rem 0.2rem;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--gray);
+  color: gray;
+  font-weight: 500;
+  font-family: 'Work Sans', sans-serif;
+}
+.form input:focus {
+  border: none;
+  outline: none;
+}
+.error input::placeholder{
+  color: red;
+  
+}
+@media only screen and (max-width: 760px) {
+    .form{
+        width: 100%;
+    }
+}

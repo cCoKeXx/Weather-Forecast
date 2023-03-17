@@ -1,0 +1,59 @@
+.container {
+  background-color: var(--gray);
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+}
+.container p{
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.listContainer {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 0.4rem;
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-start;
+  overflow-x: auto;
+}
+.listItem {
+
+  width: 4rem;
+  padding: 0 1rem;
+  flex-shrink: 0;
+  min-width: 0;
+  border-right: 1px solid gray;
+}
+.listItem:last-child {
+  border: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 5px;
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+@media only screen and (max-width:460px){
+    .listItem{
+      padding: 0 0.2rem;
+    }
+}
