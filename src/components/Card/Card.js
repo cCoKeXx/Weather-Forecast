@@ -13,7 +13,7 @@ import classes from "./Card.module.css";
 import useHttp from "../../hooks/use-http";
 const Card = () => {
   const { isLoading, error, sendRequest , setError} = useHttp();
-  const [coordinates, setCoordinates] = useState(null);
+  const [coordinates, setCoordinates] = useState({lat:44,lon:20});
   const [unit, setUnit] = useState("metric");
   const [weatherData, setWeatherData] = useState();
 
@@ -69,7 +69,7 @@ const Card = () => {
     if (coordinates) {
       sendRequest({ url }, (data) => {
         setWeatherData(data);
-        console.log(data);
+
       });
     }
   }, [sendRequest, url, coordinates]);
